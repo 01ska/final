@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru"> 
+<head>
+    <meta charset="UTF-8">
+    <title>Чрезвычайные Ситуации</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> 
+    <link rel="stylesheet" href="styles.css"> 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+    <script src="script.js"></script>
+</head>
+<body>
+    <header class="main-header">
+        <h1 id="animated-header">Информация о чрезвычайных ситуациях</h1>
+        <nav>
+            <ul class="nav-list">
+                <li><a href="index.html">Главная</a></li> 
+                <li><a href="earthquake.html">Землетрясение</a></li>
+                <li><a href="flood.html">Паводок</a></li>
+                <li><a href="storm.html">Буря</a></li>
+                <li><a href="emergency.html">ЧС</a></li>
+                <li><a href="charity.html">Благотворительность</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+            </ul> 
+        </nav> 
+    </header>
+
+    <main class="content">
+        <section class="welcome">
+            <h2>Добро пожаловать!</h2>
+            <button id="show-alert" class="cta-button">Предупреждение о ЧС</button>
+
+            <h3>Таймер обратного отсчета</h3>
+            <p>Время до следующего сигнала: <span id="countdown">10:00</span></p>
+            <button id="start-timer" class="cta-button">Запустить таймер</button>
+        </section>
+
+        <section class="to-do-list">
+            <h3>Список дел на случай ЧС</h3>
+            <input type="text" id="new-task" placeholder="Введите новую задачу">
+            <button id="add-task" class="cta-button">Добавить задачу</button>
+            <ul id="to-do-list">
+                <li>Ценные вещи</li>
+                <li>Документы</li>
+                <li>Убедиться, что есть аптечка</li>
+                <li>Проверить запасы воды</li>
+                <li>Подготовить фонарики и батарейки</li>
+            </ul>
+            <button id="surprise-button" class="cta-button">Открыть в самом конце проверки</button>
+             <button id="play-audio" class="cta-button">Проиграть предупреждение</button>
+        </section>
+    </main>
+    <footer class="main-footer">
+        <p>&copy; 2024 Ваш сайт о безопасности.</p>
+    </footer>
+</body>
+</html>
